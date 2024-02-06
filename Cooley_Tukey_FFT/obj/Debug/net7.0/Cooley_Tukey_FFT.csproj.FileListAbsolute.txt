@@ -1,0 +1,15 @@
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\Cooley_Tukey_FFT.exe
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\Cooley_Tukey_FFT.deps.json
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\Cooley_Tukey_FFT.runtimeconfig.json
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\Cooley_Tukey_FFT.dll
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\Cooley_Tukey_FFT.pdb
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.csproj.AssemblyReference.cache
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.AssemblyInfoInputs.cache
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.AssemblyInfo.cs
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.csproj.CoreCompileInputs.cache
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.dll
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\refint\Cooley_Tukey_FFT.dll
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.pdb
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.genruntimeconfig.cache
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\ref\Cooley_Tukey_FFT.dll
