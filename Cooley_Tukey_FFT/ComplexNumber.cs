@@ -82,6 +82,14 @@ namespace Cooley_Tukey_FFT
             return Math.Sqrt((real * real) + (imag * imag));
         }
         /// <summary>
+        /// Calculates the squared magnitude of the Complex Number
+        /// </summary>
+        /// <returns>The squared magnitude of the Complex Number</returns>
+        public double MagnitudeSquared()
+        {
+            return (this.real * this.real) + (this.imag * this.imag);
+        }
+        /// <summary>
         /// Gets the Phase of the Complex Number
         /// </summary>
         /// <returns>The Phase of the Complex Number</returns>

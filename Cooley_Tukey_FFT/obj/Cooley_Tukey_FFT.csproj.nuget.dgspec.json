@@ -42,6 +42,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NWaves": {
+              "target": "Package",
+              "version": "[0.9.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

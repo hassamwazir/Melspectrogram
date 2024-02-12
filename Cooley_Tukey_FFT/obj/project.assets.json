@@ -1,11 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "NWaves/0.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/NWaves.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/NWaves.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NWaves/0.9.6": {
+      "sha512": "LoVqwy6zgeF9l7Yj9rihWtnbbytZOLtU/lFqjnZRFqOCLJQj60NLFPA4nfvAdzK3PsHeShIw7AuJZKSElcYOGg==",
+      "type": "package",
+      "path": "nwaves/0.9.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/NWaves.dll",
+        "lib/net5.0/NWaves.xml",
+        "lib/netstandard2.0/NWaves.dll",
+        "lib/netstandard2.0/NWaves.xml",
+        "logo.png",
+        "nwaves.0.9.6.nupkg.sha512",
+        "nwaves.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "NWaves >= 0.9.6"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Hassam\\.nuget\\packages\\": {},
@@ -49,6 +83,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "NWaves": {
+            "target": "Package",
+            "version": "[0.9.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

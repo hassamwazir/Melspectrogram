@@ -81,11 +81,12 @@ namespace Cooley_Tukey_FFT
             }
         }
 
+        // The Fast Fourier Transform (FFT) algorithm
         public static List<ComplexNumber> FFT(List<ComplexNumber> inpt_signal)
         {
             int i;
             int N = inpt_signal.Count;
-            if (N == 1)
+            if (N == 1) // Base case. Return the input signal as the output signal (since the FFT of a single value is itself)
                 return inpt_signal;
 
             // Even array
@@ -123,6 +124,66 @@ namespace Cooley_Tukey_FFT
         public static bool IsPowerOfTwo(int n)
         {
             return (n != 0) && (n & (n - 1)) == 0;
+        }
+
+        public static double[] HammingWindow(int windowLength)
+        {
+            double[] window = new double[windowLength];
+            for (int i = 0; i < windowLength; i++)
+            {
+                window[i] = 0.54 - 0.46 * Math.Cos((2 * Math.PI * i) / (windowLength - 1));
+            }
+            return window;
+        }
+        public static double[] HanningWindow(int windowLength)
+        {
+            double[] window = new double[windowLength];
+            for (int i = 0; i < windowLength; i++)
+            {
+                window[i] = 0.5 - 0.5 * Math.Cos((2 * Math.PI * i) / (windowLength - 1));
+            }
+            return window;
+        }
+
+        public List<List<double>> GenerateSpectrogram(int n_fft, int hop_length, int win_length)
+        {
+            int numSegments = (inpt_sample.Count - win_length) / hop_length + 1;
+            List<List<double>> spectrogram = new List<List<double>>();
+
+            double[] window = HanningWindow(win_length);
+
+            // Process each segment
+            for (int start = 0; start + win_length <= inpt_sample.Count; start += hop_length)
+            {
+                List<ComplexNumber> segment = new List<ComplexNumber>();
+
+                // Apply window function and optionally pad segment to match n_fft
+                for (int i = 0; i < win_length; i++)
+                {
+                    double windowedValue = inpt_sample[start + i].Real * window[i];
+                    segment.Add(new ComplexNumber(windowedValue, 0));
+                }
+
+                // If segmentSize is less than n_fft, pad the segment with zeros up to n_fft
+                if (win_length < n_fft)
+                {
+                    int paddingSize = n_fft - win_length;
+                    for (int i = 0; i < paddingSize; i++)
+                    {
+                        segment.Add(new ComplexNumber(0, 0));
+                    }
+                }
+
+                // Compute FFT of the windowed (and possibly padded) segment
+                List<ComplexNumber> fftResult = FFT(segment);
+                // Calculate power spectrum from FFT result
+                List<double> powerSpectrum = fftResult.Select(c => c.MagnitudeSquared()).ToList();
+
+                // Optionally, consider only the first (nFft/2)+1 bins if onesided is true
+                spectrogram.Add(powerSpectrum.GetRange(0, (n_fft / 2) + 1));
+            }
+
+            return spectrogram;
         }
     }
 }

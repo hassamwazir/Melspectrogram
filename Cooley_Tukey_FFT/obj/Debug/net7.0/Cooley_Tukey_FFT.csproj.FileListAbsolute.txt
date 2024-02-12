@@ -13,3 +13,5 @@ D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\refint\Cooley_T
 D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.pdb
 D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.genruntimeconfig.cache
 D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\ref\Cooley_Tukey_FFT.dll
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\bin\Debug\net7.0\NWaves.dll
+D:\Cpp_Projects\Melspectrogram\Cooley_Tukey_FFT\obj\Debug\net7.0\Cooley_Tukey_FFT.csproj.CopyComplete
